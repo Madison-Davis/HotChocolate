@@ -1,0 +1,57 @@
+:root {
+    --theme-color-light: #d1c99d;
+    --theme-color-dark: #822433;
+    --padding: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-down {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.flex-down > * {
+    width: 100%;
+}
+
+.header-fixed {
+    background-color: var(--theme-color-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    color: white;
+    font-family: 'Source Serif Pro', 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    font-size: 54px;
+    padding: var(--padding);
+}
+
+h2 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    font-size: 23.4px;
+    padding: var(--padding);
+    text-transform: uppercase;
+}
+
+.header-fixed * {
+    margin: 0;
+}
+
+.hero {
+    height: 40vh;
+    background: url('coding.jpg');
+    background-size: cover;
+}
