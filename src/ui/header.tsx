@@ -16,12 +16,5 @@ export class Header extends React.Component<{},HeaderState> {
         return <div className="header-fixed" ref={(h) => h != null && h.offsetHeight != this.state.height && this.setState({height: h.offsetHeight})}>
             <h2>Coding Thing</h2>
         </div>
-        
-        
-        /*<div style={{
-            height: this.state.height
-        }}>*/
-            
-        //</div>;
     }
 }

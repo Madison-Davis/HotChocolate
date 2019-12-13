@@ -7,6 +7,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 .flex-down {
@@ -16,7 +17,25 @@ body {
 }
 
 .flex-down > * {
-    width: 100%;
+    /*width: 100%;*/
+}
+
+.spread-across {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spread-across > * {
+    text-align: center;
+}
+
+.spread-across > *:first-child {
+    text-align: left;
+}
+
+.spread-across > *:last-child {
+    text-align: right;
 }
 
 .header-fixed {
@@ -38,7 +57,6 @@ h1 {
 
 h2 {
     color: white;
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
     letter-spacing: -0.025em;
     font-size: 23.4px;
@@ -46,12 +64,42 @@ h2 {
     text-transform: uppercase;
 }
 
+h4 {
+    font-style: italic;
+}
+
 .header-fixed * {
     margin: 0;
 }
 
+.hero, .thumb {
+    background-image: url('coding.jpg');
+    background-size: cover;
+    height: 50px;
+}
+
 .hero {
     height: 40vh;
-    background: url('coding.jpg');
-    background-size: cover;
+}
+
+.projects-list {
+    padding: 15px;
+}
+
+.projects-list h2, .projects-list h3, .projects-list h4 {
+    margin: 0;
+}
+
+.project-entry {
+    width: 300px;
+    height: 200px;
+}
+
+.project-entry > *:first-child {
+    flex-grow: 1;
+}
+
+.project-entry-text-container {
+    height: 40px;
+    text-overflow: ellipsis;
 }
