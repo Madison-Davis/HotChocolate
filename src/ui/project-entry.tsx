@@ -9,7 +9,7 @@ interface ProjectEntryProps {
 
 export class ProjectEntry extends React.Component<ProjectEntryProps> {
     render() {
-        return <div className="flex-down project-entry">
+        return <div className="flex-down project-entry clickable">
             <div className="thumb" style={{
                 backgroundImage: `url('${this.props.imageURL}')`
             }}></div>
