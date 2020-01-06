@@ -97,7 +97,14 @@ h4 {
 }
 
 .projects-list {
-    padding: 15px;
+    padding: 7.5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-list-container {
+    margin: 0 10vw;
 }
 
 .projects-list h2, .projects-list h3, .projects-list h4 {
@@ -107,6 +114,8 @@ h4 {
 .project-entry {
     width: 300px;
     height: 200px;
+    margin: 7.5px;
+    position: relative;
 }
 
 .project-entry > *:first-child {
@@ -114,9 +123,11 @@ h4 {
 }
 
 .project-entry-text-container {
-    height: 40px;
+    height: 70px;
     text-overflow: ellipsis;
     padding: var(--padding);
+    letter-spacing: -0.25px;
+    position: relative;
 }
 
 .clickable {
@@ -125,4 +136,20 @@ h4 {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0px 5px 15px 2px var(--light-grey);
+    transform: scale(1);
+    transition: transform 0.1s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.clickable:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.language-tab {
+    background-color: rgb(219, 219, 253);
+    padding: var(--padding);
+    position: absolute;
+    top: calc(-1em - (2 * var(--padding)));
 }

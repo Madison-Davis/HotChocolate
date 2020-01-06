@@ -11,7 +11,10 @@ export class App extends React.Component<{},{}> {
                 <Header></Header>
                 <Hero></Hero>
                 <ProjectsList>
-                    <ProjectEntry submitter="Submitter Name" title="Coding Project" description="This is my coding project! This is my coding project! This is my coding project!" imageURL="coding.jpg"></ProjectEntry>
+                    <ProjectEntry language="Java" clickURL="http://example.com" submitter="Submitter Name" title="Coding Project" description="This is my coding project! This is my coding project! This is my coding project!" imageURL="coding.jpg"></ProjectEntry>
+                    <ProjectEntry language="Java" clickURL="http://example.com" submitter="Submitter Name" title="Coding Project" description="This is my coding project! This is my coding project! This is my coding project!" imageURL="coding.jpg"></ProjectEntry>
+                    <ProjectEntry language="Java" clickURL="http://example.com" submitter="Submitter Name" title="Coding Project" description="This is my coding project! This is my coding project! This is my coding project!" imageURL="coding.jpg"></ProjectEntry>
+                    <ProjectEntry language="Java" clickURL="http://example.com" submitter="Submitter Name" title="Coding Project" description="This is my coding project! This is my coding project! This is my coding project!" imageURL="coding.jpg"></ProjectEntry>
                 </ProjectsList>
             </div>
         );
