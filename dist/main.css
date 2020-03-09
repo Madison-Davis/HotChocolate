@@ -41,6 +41,20 @@ body {
     text-align: right;
 }
 
+.first-grow-down {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.first-grow-down > *:first-child {
+    flex: 1
+}
+
+.first-grow-down > *:last-child {
+    flex: 0
+}
+
 .header-fixed {
     background-color: var(--theme-color-dark);
     position: fixed;

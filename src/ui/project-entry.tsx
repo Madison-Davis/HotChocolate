@@ -1,8 +1,7 @@
 import * as React from "react";
 
-interface ProjectEntryProps {
+export interface ProjectEntryProps {
     title: string;
-    description: string;
     submitter: string;
     imageURL: string;
     clickURL: string;
@@ -17,11 +16,16 @@ export class ProjectEntry extends React.Component<ProjectEntryProps> {
             }}></div>
             <div className="flex-down project-entry-text-container">
                 <span className="language-tab">{this.props.language}</span>
-                <div className="spread-across">
-                    <h3>{this.props.title}</h3>
-                    <h4>{this.props.submitter}</h4>
+                <div className="first-grow-down">
+                    <span>{this.props.title}</span>
+                    <div className="spread-across">
+                        <div></div>
+                        <div className="first-grow-down">
+                            <div></div>
+                            <h4>{this.props.submitter}</h4>
+                        </div>
+                    </div>
                 </div>
-                <span>{this.props.description}</span>
             </div>
         </div>
     }
